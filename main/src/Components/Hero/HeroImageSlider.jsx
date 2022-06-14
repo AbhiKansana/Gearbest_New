@@ -3,21 +3,25 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import "./styles.css";
+import "./Slider.css";
 
 import Slider from "react-slick";
 
 export default function Carousel() {
+  const arr = ['https://uidesign.gbtcdn.com/GB/image/9534/Smart+Watches+PC+1190X420+EN.jpg',
+  'https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg',
+  ]
   const renderSlides = () =>
-    [1, 2, 3, 4, 5, 6, 7, 8].map(num => (
-      <div>
-        <h3>Slide {num}</h3>
+    arr.map(num => (
+      <div >
+        <img style={{width:'912px'}} src={num} />
       </div>
     ));
 
   return (
-    <div className="App">
+    <div  style={{width:'912px'}} className="App">
       <Slider dots={true}>{renderSlides()}</Slider>
     </div>
   );
 }
+
