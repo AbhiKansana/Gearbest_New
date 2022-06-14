@@ -7,7 +7,7 @@ import { CgProfile } from 'react-icons/cg';
 function Navbar() {
   return (
     
-    <Box border='1px solid black' display='flex' gap='150px'>
+    <Box  display='flex' gap='150px'>
         <Center bg='white' w='230px' h='108px'>
         <Image w='230px' h='50px' src='https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png' ></Image>
         </Center>

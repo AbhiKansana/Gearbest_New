@@ -1,8 +1,5 @@
-body {
-    /* background: #3498db; */
-  }
-  
-  .App {
+
+  .Appy {
     font-family: sans-serif;
     /* padding: 0 30px; */
     background-color: antiquewhite;
@@ -11,7 +8,7 @@ body {
     
   }
   
-  .App > div {
+  .Appy > div {
     background-color: #5c2e91;
     background-color: #fff;
     color: #fff;

@@ -5,7 +5,7 @@ import {BsHandThumbsUp, BsStar} from 'react-icons/bs'
 import {MdOutlineLocalShipping} from 'react-icons/md'
 function FooterTop() {
   return (
-    <Box border='1px solid black'>
+    <Box >
         <HStack textAlign='center' gap='50px'>
             <Box  p='20px' >
                 <Image w='200px'mb='15px' src='https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png'></Image>

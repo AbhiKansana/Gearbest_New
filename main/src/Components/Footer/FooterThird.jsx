@@ -44,7 +44,7 @@ function FooterThird() {
             <Image w='120px' src='https://cdn.pixabay.com/photo/2021/12/12/16/10/qr-6865526__340.png'></Image>
             </Box>
         </Flex>
-            <Text p='10px 20px' bg='black' color='white' textAlign='center'>Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</Text>
+            <Text  p='10px 20px' bg='black' color='white' textAlign='center'>Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</Text>
     </Box>
   )
 }
