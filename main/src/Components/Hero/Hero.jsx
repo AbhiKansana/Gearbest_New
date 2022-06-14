@@ -31,11 +31,11 @@ function Hero() {
                 </HStack>
                 <Box>
                    <Carousel/>
-                    <Flex  justifyContent='space-between'>
-                        <Image src='https://uidesign.gbtcdn.com/GB/image/8823/L900-230X120-en.jpg'></Image>
-                        <Image src='https://uidesign.gbtcdn.com/GB/image/8823/C230X120-en.jpg'></Image>
-                        <Image src='https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg'></Image>                   
-                        <Image src='https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg'></Image>
+                    <Flex w='912px' m='auto' justifyContent='space-between'>
+                        <Image  cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/8823/L900-230X120-en.jpg'></Image>
+                        <Image cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/8823/C230X120-en.jpg'></Image>
+                        <Image cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg'></Image>                   
+                        <Image  cursor='pointer'src='https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg'></Image>
                     </Flex>
                 </Box>
             </Box>
@@ -49,6 +49,6 @@ export default Hero
 
 function Texty({text}){
     return(
-        <Text textAlign='left' padding='4.5px 0 '  _hover={{fontWeight:'600',cursor:'pointer'}}>{text}</Text>
+        <Text   fontSize='.96rem'  ml='20px' padding='4.5px 0 '  _hover={{fontWeight:'600',cursor:'pointer'}}>    {text}</Text>
     )
 }
