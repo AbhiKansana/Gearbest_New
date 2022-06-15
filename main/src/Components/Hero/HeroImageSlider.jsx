@@ -13,7 +13,7 @@ export default function Carousel() {
   ]
   const renderSlides = () =>
     arr.map(num => (
-      <div >
+      <div key={num} >
         <img style={{width:'912px'}} src={num} />
       </div>
     ));

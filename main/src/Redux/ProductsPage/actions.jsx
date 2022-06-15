@@ -30,7 +30,7 @@ function productsPageFailure(){
 
 // export default function productsPageFetch({page,sort,order}){
 export default function productsPageFetch(param){
-    console.log("param.category",param)
+    // console.log("param.category",param)
     return (dispatch) =>{
         dispatch(productsPageRequest())
         // axios.get(`http://localhost:8000/products?_page=${page}&_limit=9&_sort=${sort}&_order=${order}`)

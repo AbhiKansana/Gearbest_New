@@ -3,9 +3,11 @@ import HomePage from './Pages/HomePage';
 import ProdutsPage from './Pages/ProdutsPage';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+import Description from './Pages/Description';
 import {
   Routes,
   Route,
+  
 } from "react-router-dom";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/products' element={<ProdutsPage/>}/>
+        <Route path='/products:id' element={<Description/>}/>
+        
       </Routes>
       <Footer/>
     </Box>

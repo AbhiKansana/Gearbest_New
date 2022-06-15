@@ -2,7 +2,7 @@ import React from 'react'
 import {
     Box, Center, Image, Text, Grid, Icon, HStack
 } from '@chakra-ui/react'
-
+import {Link} from 'react-router-dom'
 import {AiFillShop} from 'react-icons/ai'
 
 // const obj = {
@@ -22,6 +22,7 @@ function UnitProduct({object}) {
     const obj = object
 
   return (
+    <Link to={`/products${obj.id}`}>
     <Box  className='boxShadowUnitProduct' borderRadius='14px' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;'  cursor='pointer'  >
         <Center>
             <Image w='200px'  src={obj.image_url}></Image>
@@ -40,6 +41,7 @@ function UnitProduct({object}) {
         </Box>
 
     </Box>
+    </Link>
   )
 }
 
