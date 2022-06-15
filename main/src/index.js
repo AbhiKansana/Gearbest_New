@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom/client';
 import { ChakraProvider } from '@chakra-ui/react'
 import App from './App';
 import './Index.css'
-import { Box } from '@chakra-ui/react';
+import { BrowserRouter } from "react-router-dom";
+import store from './Redux/store';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <ChakraProvider>
-    <Box margin='auto' w='1200px' h='140px'  >
-      <App />
-    </Box>
+    <BrowserRouter>
+      <Provider store={store}>
+         <App />
+      </Provider>
+    </BrowserRouter>
   </ChakraProvider>
   
 );

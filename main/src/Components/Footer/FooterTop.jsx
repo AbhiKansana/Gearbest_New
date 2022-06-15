@@ -8,7 +8,7 @@ function FooterTop() {
     
     <Box bg='#FAFAFA' mt='40px'>
         {/* <Divider color='black' border='2px solid black' h='2px'/> */}
-        <hr  style={{border:'1px solid black'}} />
+        <hr  color='black' style={{border:'.4px solid black'}} />
         <HStack mt='40px' textAlign='center' gap='50px'>
             <Box  p='20px' >
                 <Image w='200px'mb='15px' src='https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png'></Image>
