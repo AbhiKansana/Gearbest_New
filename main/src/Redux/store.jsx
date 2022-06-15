@@ -2,9 +2,11 @@ import {legacy_createStore as createStore, applyMiddleware, combineReducers} fro
 import { composeWithDevTools } from '@redux-devtools/extension';
 import thunk from 'redux-thunk'
 import productsPageReducer from './ProductsPage/reducer';
+import filterReducer from './Filter/reducer';
 
 const rootReducer = combineReducers({
-   productPage :  productsPageReducer
+   productPage :  productsPageReducer,
+   filterParams : filterReducer,
 })
 
 const store = createStore(rootReducer,

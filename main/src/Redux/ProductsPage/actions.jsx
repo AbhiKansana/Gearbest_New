@@ -1,3 +1,4 @@
+import { PartyModeSharp } from '@material-ui/icons'
 import axios from 'axios'
 
 
@@ -27,10 +28,23 @@ function productsPageFailure(){
     }
 }
 
-export default function productsPageFetch(){
+// export default function productsPageFetch({page,sort,order}){
+export default function productsPageFetch(param){
+    console.log("param.category",param)
     return (dispatch) =>{
         dispatch(productsPageRequest())
-        axios.get('http://localhost:8000/products')
+        // axios.get(`http://localhost:8000/products?_page=${page}&_limit=9&_sort=${sort}&_order=${order}`)
+        axios.get(`http://localhost:8000/products`,{
+            params : {
+                    _limit:9,
+                    _sort : param.sort,
+                    _order: param.order,
+                    _page : param.page,
+                    brand : param.brand
+               
+
+            }
+        })
         .then(res=>{
             // console.log("res",res.data)
             dispatch(productsPageSuccess(res.data))
