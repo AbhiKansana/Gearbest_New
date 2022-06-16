@@ -200,12 +200,20 @@ button,.pointer{
     padding: 10px 20px;
     margin-right: 20px;
 
+
 }
 
 .addToCart{
     background-color: #ff9c01;
     color: white;
 }
+
+.addToCart:active{
+    background-color: rgb(71, 196, 36);
+    border: .5px solid #0fe42b;
+}
+
+
 
 .wishList{
     display: flex;
