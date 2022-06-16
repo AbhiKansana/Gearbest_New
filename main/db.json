@@ -2,18 +2,6 @@
   "cart": [
     {
       "rating": "★★",
-      "id": 1,
-      "image_url": "https://img.gkbcdn.com/p/2021-11-12/xiaomi-redmi-note-11-5g-smartphone-8gb-256gb-black-1636705048083._w280_p1_.jpg",
-      "name": "Xiaomi Redmi Note Ver. 5G Smartphone",
-      "price": 33763.72,
-      "strikedoffprice": 39260.26,
-      "brand": "Xiaomi",
-      "category": "cell",
-      "qnty": 0,
-      "description": "Redmi Note Ver. 5G Smartphone 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
-    },
-    {
-      "rating": "★★",
       "id": 10,
       "image_url": "https://img.gkbcdn.com/p/2021-11-17/Global-Version-POCO-M3-Pro-478594-0._w280_p1_.jpg",
       "name": "POCO M3 Pro GLobal Version 5G Smartphone",
@@ -21,8 +9,44 @@
       "strikedoffprice": 21121.66,
       "brand": "POCO",
       "category": "cell",
-      "qnty": 0,
+      "qnty": 1,
       "description": "POCO M3 Pro 5G NFC Global Version Smartphone Dimensity 700 90Hz 6.5' FHD+ DotDisplay 5000mAh 48MP Triple Camera 6+128GB - Black"
+    },
+    {
+      "rating": "★★★",
+      "id": 5,
+      "image_url": "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-8GB-256GB-Green-492530-0._w280_p1_.jpg",
+      "name": "Realme GT2 Pro CN Version 5G Smrtphone",
+      "price": 70276.49,
+      "strikedoffprice": 74987.82,
+      "brand": "Realme",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Realme GT2 10 Pro CN Version 6.6 Inch 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
+    },
+    {
+      "rating": "★★★★",
+      "id": 2,
+      "image_url": "https://img.gkbcdn.com/p/2021-12-30/xiaomi-mi-12-6-28--5g-smartphone-snapdragon-8-8gb-128gb-black-6a24bb-1640827752278._w280_p1_.jpg",
+      "name": "Xiaomi Mi 12 Ver5G Smartphone 6.28 inch",
+      "price": 65565.17,
+      "strikedoffprice": 72396.59,
+      "brand": "Xiaomi",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Redmi  Mi 12 Ver5G Smartphone 6.28 inch 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
+    },
+    {
+      "rating": "★★★",
+      "id": 23,
+      "image_url": "https://img.gkbcdn.com/p/2021-12-20/oppo-r11s-6-01-inch-4gb-64gb-smartphone-red-721452-1640003614062._w280_p1_.jpg",
+      "name": "OPPO Find N Foldable Flagship Smartphone",
+      "price": 141338.99,
+      "strikedoffprice": 41338.99,
+      "brand": "OPPO",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Oneplus 9 CN Version 5G Smartphone 6.55 Inch 2400 x 1080p Screen 120Hz Refresh Rate Qualcomm Snapdragon 888 8GB RAM 128GB ROM Android 11 48MP + 50MP + 2MP Triple Rear Camera 4500mAh Battery 65W Warp Flash Charge - Blue"
     }
   ],
   "products": [

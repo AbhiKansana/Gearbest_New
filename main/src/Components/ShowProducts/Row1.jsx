@@ -1,14 +1,15 @@
 import React from 'react'
 import  './Row1.css'
+import { Link } from 'react-router-dom'
 
 function Row1() {
   return (
     <div>
          <div className='third-div-title-image'>
-            <div className='third-div-title-images'>
-                <div className='third-div-title-images1'>
+       <div className='third-div-title-images'>
+               <Link to='/products'><div className='third-div-title-images1'>
                     <img src="https://img.gkbcdn.com/p/2022-03-29/LOKMAT-APPLLP-MAX-Android-Watch-Phone-Black-498482-0._w280_p1_.jpg" alt="" />
-                </div>
+                </div></Link> 
                 <div className='third-div-title-images-price'>
                     <div className='product-price'>
                         <p>₹14937.58</p>

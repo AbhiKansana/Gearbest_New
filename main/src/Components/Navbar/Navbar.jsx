@@ -24,7 +24,7 @@ function Navbar() {
             <Flex p='10px' gap='40px' flexDir='row-reverse'  >
               <Center cursor='pointer'  gap='10px'> <Link to='/cart'> <Icon boxSize='1.5rem' as={AiOutlineShoppingCart}/></Link><Link to='/cart'><Text fontSize='1.05rem'>Cart</Text></Link></Center>
                 <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={AiOutlineHeart}/><Text  fontSize='1.15rem'>Favourites</Text></Center>
-                <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={CgProfile}/><Text fontSize='1.05rem'>Sing In</Text></Center>
+                <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={CgProfile}/><Text fontSize='1.05rem'>Sign In</Text></Center>
                 <Flex border='2.2px solid #3a86ff'  borderRadius='25px' >
                     <Input  w='300px' borderLeftRadius='25px' borderWidth='0px' fontSize='1.1rem' placeholder="mobile phone"></Input>
                     <Button borderRightRadius='25px'><Center><Icon boxSize='1.3rem' as={AiOutlineSearch}></Icon></Center></Button>
