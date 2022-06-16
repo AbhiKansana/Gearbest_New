@@ -1,19 +1,31 @@
 {
-  "posts": [
+  "cart": [
     {
+      "rating": "★★",
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "image_url": "https://img.gkbcdn.com/p/2021-11-12/xiaomi-redmi-note-11-5g-smartphone-8gb-256gb-black-1636705048083._w280_p1_.jpg",
+      "name": "Xiaomi Redmi Note Ver. 5G Smartphone",
+      "price": 33763.72,
+      "strikedoffprice": 39260.26,
+      "brand": "Xiaomi",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Redmi Note Ver. 5G Smartphone 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
+    },
+    {
+      "rating": "★★",
+      "id": 10,
+      "image_url": "https://img.gkbcdn.com/p/2021-11-17/Global-Version-POCO-M3-Pro-478594-0._w280_p1_.jpg",
+      "name": "POCO M3 Pro GLobal Version 5G Smartphone",
+      "price": 17274.08,
+      "strikedoffprice": 21121.66,
+      "brand": "POCO",
+      "category": "cell",
+      "qnty": 2,
+      "description": "POCO M3 Pro 5G NFC Global Version Smartphone Dimensity 700 90Hz 6.5' FHD+ DotDisplay 5000mAh 48MP Triple Camera 6+128GB - Black"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "products":[
+  "products": [
     {
       "rating": "★★",
       "id": 1,

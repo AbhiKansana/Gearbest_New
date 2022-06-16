@@ -22,7 +22,7 @@ export default function cartReducer (state = init,action){
                 ...state,
                 isLoading : false,
                 isError : false,
-                cartArr : [...state.cartArr,action.payload]
+                cartArr : action.payload
             }
         case actionTypes.CART_PRODUCTS_FAILURE :
             return {

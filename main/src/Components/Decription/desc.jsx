@@ -72,9 +72,17 @@ function Desc() {
     }
     
     function handleCart(){
-        dispatch(cartProductsSuccess(data))
+        axios.post("http://localhost:7000/cart",data)
+        .then(res=>{
+            // console.log(res)
+        })
+        .catch(err=>{
+            // console.log("postCartObjError")
+        })
+
     }
 
+  
   return (
     <div className='biggy'>
       
@@ -84,7 +92,7 @@ function Desc() {
                 <div className="mainImgBox">
                 <img  src={data.image_url} alt="watch" />
                 </div>
-                <div className="rightMain">
+                <div  className="rightMain">
                 <p className='title'>{data.description}</p>
                     <div className='forSpans'>
                     <span>Brand: <span>{data.brand}</span> </span>

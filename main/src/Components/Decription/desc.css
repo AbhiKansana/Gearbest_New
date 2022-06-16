@@ -27,13 +27,17 @@ button,.pointer{
 }
 
 .mainImgBox {
-    width: 100%;
+    width: 40%;
     margin-right: 20px;
+}
+
+.rightMain{
+    width: 60%;
 }
 
 .mainImgBox img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .forSpans span{
