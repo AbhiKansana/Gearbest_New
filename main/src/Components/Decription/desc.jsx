@@ -1,27 +1,27 @@
 import React,{useState,useEffect} from 'react'
 import './desc.css'
 import Clock from './timer'
-import {useParams} from 'react-router-dom'
+import {useParams, useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux';
+import { cartProductsSuccess } from '../../Redux/CartPage/actions'
 
 
 function Desc() {
 
     const dispatch = useDispatch();
+    const Navigate= useNavigate()
     const {id} = useParams()
     const[data,setdata] = useState({})
     // console.log(data1)
   
-
     useEffect(()=>{
-        axios.get(`http://localhost:8000/products/${id}`)
+        axios.get(`http://localhost:7000/products/${id}`)
         .then(res => {
             setdata(res.data)
         })
 
     },[])
-    
 
     // const data = {
     //     "rating": "★★",
@@ -35,9 +35,6 @@ function Desc() {
     //     "qnty": 0,
     //     "description": "Redmi Note Ver. 5G Smartphone 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
     //   }
-
-
-
 
     const unfilledLike = "https://cdn-icons-png.flaticon.com/128/535/535285.png"
     const filledLike = "https://cdn-icons-png.flaticon.com/128/7299/7299756.png"
@@ -74,6 +71,9 @@ function Desc() {
         setliked(prev=>!prev)
     }
     
+    function handleCart(){
+        dispatch(cartProductsSuccess(data))
+    }
 
   return (
     <div className='biggy'>
@@ -123,8 +123,8 @@ function Desc() {
                         </div>
                     </div>
                     <div className="buttons">
-                            <div className="buyNow pointer">Buy Now </div>
-                            <div className="addToCart pointer" >Add to Cart </div>
+                            <div onClick={()=>Navigate('/cart')} className="buyNow pointer">Buy Now </div>
+                            <div onClick={handleCart} className="addToCart pointer" >Add to Cart </div>
                             <div onClick={handleLike} className="wishList pointer">
                                 <img src={liked ? filledLike : unfilledLike} />
                                 <p className="wishTxt">

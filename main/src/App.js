@@ -4,6 +4,7 @@ import ProdutsPage from './Pages/ProdutsPage';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Description from './Pages/Description';
+import CartPage from './Pages/CartPage';
 import {
   Routes,
   Route,
@@ -18,7 +19,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/products' element={<ProdutsPage/>}/>
         <Route path='/products:id' element={<Description/>}/>
-        
+        <Route path='/cart' element={<CartPage/>}/>   
       </Routes>
       <Footer/>
     </Box>
