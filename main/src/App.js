@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Description from './Pages/Description';
 import CartPage from './Pages/CartPage';
+import Payment from './Pages/Payment';
 import {
   Routes,
   Route,
@@ -20,6 +21,7 @@ function App() {
         <Route path='/products' element={<ProdutsPage/>}/>
         <Route path='/products:id' element={<Description/>}/>
         <Route path='/cart' element={<CartPage/>}/>   
+        <Route path='/payment' element={<Payment/>}/>   
       </Routes>
       <Footer/>
     </Box>

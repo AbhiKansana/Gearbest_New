@@ -8,7 +8,6 @@ function CartPage() {
   return (
     <Box mt='40px'>
         <Main/>
-
     </Box>
   )
 }

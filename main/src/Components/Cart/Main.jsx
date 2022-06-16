@@ -17,9 +17,11 @@ import axios from "axios";
 import { mainCartProductsSuccess } from "../../Redux/CartPage/actions";
 import { deleteCartItem } from "../../Redux/CartPage/actions";
 import { updateCartItem } from "../../Redux/CartPage/actions";
+import { useNavigate } from 'react-router-dom'
 
 function Main() {
   const dispatch = useDispatch();
+  const Navigate = useNavigate()
   const state = useSelector((state) => state.cartPage);
   const load = state.isLoading
   let total = 0
@@ -39,10 +41,10 @@ function Main() {
 
   return (
     <Box>
-      <Text mb="30px" textAlign="center" fontSize="xx-large">
+      <Text mb="30px" textAlign="center" fontWeight='500' fontSize="xx-large">
         Shopping Cart
       </Text>
-      {load && ( <Center> <Spinner size="xl" /></Center>)}
+      {load &&  arr.length<1 && (  <Spinner pos='relative' top='50%' left='50%' size="xl" zIndex='100' />)}
       { arr.length> 0 && <Flex gap='180px'>
         <Text ml='50px'>Item</Text>
         <Text ml='420px'>Price</Text>
@@ -52,13 +54,13 @@ function Main() {
       <Box mb='30px' borderBottom='.4px solid black'>
       {arr}
       </Box>
-      <VStack  spacing='15px' w='280px' m='auto' >
+      <VStack   spacing='15px' w='280px' m='auto' >
         <Flex justifyContent='space-between' width='100%'>
         <Text fontSize='22px' fontWeight='500'>Subtotal</Text>
-        <Text fontSize='24px' fontWeight='600'>₹{total}</Text>
+        <Text fontSize='24px' fontWeight='600'>₹{(total).toFixed(2)}</Text>
         </Flex>
-        <Button w='280px' colorScheme='whatsapp'>Proceed to payment <ArrowForwardIcon boxSize='20px'/></Button>
-        <Button w='280px' colorScheme='telegram'><ArrowBackIcon boxSize='20px' />Back to Product Page </Button>
+        <Button w='280px' onClick={()=>Navigate('/payment')} colorScheme='whatsapp'>Proceed to payment <ArrowForwardIcon boxSize='20px'/></Button>
+        <Button w='280px'  onClick={()=>Navigate('/products')} colorScheme='telegram'><ArrowBackIcon boxSize='20px' />Back to Product Page </Button>
       </VStack>
     </Box>
 
@@ -69,7 +71,7 @@ export default Main;
 
 function Unit({ data }) {
   const dispatch = useDispatch();
-
+  
   //  const data = {
   //     "rating": "★★",
   //     "id": 1,
@@ -88,7 +90,8 @@ function Unit({ data }) {
   }
 
   return (
-    <Flex
+    <Flex 
+      boxSizing="border-box"
       p="20px"
       pl="0"
       justifyContent="space-between"
@@ -138,7 +141,9 @@ function Unit({ data }) {
           +
         </Button>
       </Box>
-      <Text fontWeight="600"> {(data.price)*(data.qnty+1)}</Text>
+      <Center boxSizing="border-box" w='80px'>
+      <Text  fontWeight="600"> {((data.price)*(data.qnty+1)).toFixed(2)}</Text> 
+      </Center>
     </Flex>
   );
 }

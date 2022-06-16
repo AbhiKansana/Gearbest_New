@@ -7,7 +7,7 @@ import FooterThird from './FooterThird'
 
 function Footer() {
   return (
-    <Box>
+    <Box >
         <FooterTop/>
         <FooterMid/>
         <FooterThird/>

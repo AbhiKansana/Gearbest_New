@@ -3,7 +3,7 @@ import {Box, Flex, Image, Text} from '@chakra-ui/react'
 
 function FooterThird() {
   return (
-    <Box backgroundColor='#FAFAFA'>
+    <Box p='0 20px' backgroundColor='#FAFAFA'>
         <Flex mb='40px' justifyContent='space-between'>
             <Box>
                 <Text  fontWeight='bold'>Company Information</Text>
