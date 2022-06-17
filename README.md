@@ -3,7 +3,7 @@
 Project Time Duration: From 9th June to 16th June
 Netlify Link : https://benevolent-dolphin-d8ef88.netlify.app/
 
-<br/>
+
 ![HomePage](https://user-images.githubusercontent.com/100181581/174256390-1e06b45c-7c2e-4bcd-b4da-e70aa7efb90a.png)
 <br/>
 <br/>
