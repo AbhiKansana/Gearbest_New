@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import Description from './Pages/Description';
 import CartPage from './Pages/CartPage';
 import Payment from './Pages/Payment';
+import Login from './Pages/Signup';
 import {
   Routes,
   Route,
@@ -22,6 +23,7 @@ function App() {
         <Route path='/products:id' element={<Description/>}/>
         <Route path='/cart' element={<CartPage/>}/>   
         <Route path='/payment' element={<Payment/>}/>   
+        <Route path='/signup' element={<Login/>}/>   
       </Routes>
       <Footer/>
     </Box>
