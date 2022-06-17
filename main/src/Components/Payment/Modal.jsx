@@ -12,12 +12,22 @@ import {
     Text,
   } from '@chakra-ui/react'
 import { MdLocalFireDepartment } from 'react-icons/md'
+import {useNavigate} from 'react-router-dom'
 
 export default function OurModal() {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const Navigate = useNavigate()
+    function lastFunc(){
+      setTimeout(() => {
+        onOpen()   
+      }, 600);
+
+     
+
+    }
     return (
       <>
-        <Button fontSize='1.35rem' mt='25px' colorScheme='green' variant='solid' onClick={onOpen}>Place Order</Button>
+        <Button onClick={lastFunc} fontSize='1.35rem' mt='25px' colorScheme='green' variant='solid' >Place Order</Button>
   
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
@@ -29,7 +39,12 @@ export default function OurModal() {
             </ModalBody>
   
             <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={onClose}>
+              <Button colorScheme='blue' mr={3} onClick={()=>{
+                onClose()
+                setTimeout(() => {
+                  Navigate('/')
+                }, 500);
+              }}>
                 Close
               </Button>
             </ModalFooter>
