@@ -1,28 +1,16 @@
 {
   "cart": [
     {
-      "rating": "★★",
-      "id": 10,
-      "image_url": "https://img.gkbcdn.com/p/2021-11-17/Global-Version-POCO-M3-Pro-478594-0._w280_p1_.jpg",
-      "name": "POCO M3 Pro GLobal Version 5G Smartphone",
-      "price": 17274.08,
-      "strikedoffprice": 21121.66,
-      "brand": "POCO",
-      "category": "cell",
-      "qnty": 3,
-      "description": "POCO M3 Pro 5G NFC Global Version Smartphone Dimensity 700 90Hz 6.5' FHD+ DotDisplay 5000mAh 48MP Triple Camera 6+128GB - Black"
-    },
-    {
       "rating": "★★★",
-      "id": 5,
-      "image_url": "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-8GB-256GB-Green-492530-0._w280_p1_.jpg",
-      "name": "Realme GT2 Pro CN Version 5G Smrtphone",
-      "price": 70276.49,
-      "strikedoffprice": 74987.82,
+      "id": 24,
+      "image_url": "https://img.gkbcdn.com/p/2022-01-05/Realme-GT2-Pro-6-7-Inches-Snapdragon-8-12GB-512GB-White-492531-0._w280_p1_.jpg",
+      "name": "Realme GT2 Pro CN Version 5G Smartphone",
+      "price": 84410.47,
+      "strikedoffprice": 90692.24,
       "brand": "Realme",
       "category": "cell",
       "qnty": 0,
-      "description": "Realme GT2 10 Pro CN Version 6.6 Inch 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
+      "description": "Realme GT Neo 2T CN Version 5G Smartphone 6.43 Inch 120Hz FHD+ Screen Dimensity 1200 AI Version 12GB RAM 256GB ROM Android 11 64MP + 8MP + 4cm Triple Rear Camera 4500mAh Battery 65W Flash Charge - White"
     },
     {
       "rating": "★★",
@@ -35,6 +23,18 @@
       "category": "cell",
       "qnty": 0,
       "description": "Redmi Note Ver. 5G Smartphone 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
+    },
+    {
+      "rating": "★★★★★",
+      "id": 3,
+      "image_url": "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Blue-425886-0._w280_p1_.jpg",
+      "name": "Xiaomi Redmi 9A  Ver. 4G LTE SmartPhone",
+      "price": 10913.79,
+      "strikedoffprice": 12562.75,
+      "brand": "Xiaomi",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Redmi Note 9-i Pro CN Version 7.6 Inch 3200x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
     }
   ],
   "products": [
