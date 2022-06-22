@@ -67,10 +67,6 @@ function Desc() {
 
     const[liked,setliked] = useState(false)
 
-    function handleLike(){
-        setliked(prev=>!prev)
-    }
-    
     function handleCart(){
         axios.post("http://localhost:7000/cart",data)
         .then(res=>{
@@ -80,6 +76,17 @@ function Desc() {
             // console.log("postCartObjError")
         })
 
+    }
+
+    function handleLike(){
+        setliked(prev=>!prev)
+        axios.post("http://localhost:7000/wishList",data)
+        .then(res=>{
+            // console.log(res)
+        })
+        .catch(err=>{
+            // console.log("postWishListObjError")
+        })
     }
 
   

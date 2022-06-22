@@ -23,7 +23,7 @@ function Navbar() {
             </Flex>
             <Flex p='10px' gap='40px' flexDir='row-reverse'  >
               <Center cursor='pointer'  gap='10px'> <Link to='/cart'> <Icon boxSize='1.5rem' as={AiOutlineShoppingCart}/></Link><Link to='/cart'><Text fontSize='1.05rem'>Cart</Text></Link></Center>
-                <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={AiOutlineHeart}/><Text  fontSize='1.15rem'>Favourites</Text></Center>
+                <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={AiOutlineHeart}/><Link to='/wishlist'><Text  fontSize='1.15rem'>Favourites</Text></Link></Center>
                 <Center cursor='pointer' gap='10px'><Icon boxSize='1.5rem' as={CgProfile}/><Link to='/signup'><Text fontSize='1.05rem'>Sign In</Text></Link></Center>
                 <Flex border='2.2px solid #3a86ff'  borderRadius='25px' >
                     <Input  w='300px' borderLeftRadius='25px' borderWidth='0px' fontSize='1.1rem' placeholder="mobile phone"></Input>

@@ -7,6 +7,7 @@ import Description from './Pages/Description';
 import CartPage from './Pages/CartPage';
 import Payment from './Pages/Payment';
 import Login from './Pages/Signup';
+import WishList from './Pages/WishList';
 import {
   Routes,
   Route,
@@ -15,7 +16,7 @@ import {
 
 function App() {
   return (
-    <Box  margin='auto' w='1200px' h='140px' className="App">
+    <Box  margin='auto' maxW='1200px'  className="App">
       <Navbar/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
@@ -24,6 +25,8 @@ function App() {
         <Route path='/cart' element={<CartPage/>}/>   
         <Route path='/payment' element={<Payment/>}/>   
         <Route path='/signup' element={<Login/>}/>   
+        <Route path='/signup' element={<Login/>}/>   
+        <Route path='/wishlist' element={<WishList/>}/>   
       </Routes>
       <Footer/>
     </Box>
