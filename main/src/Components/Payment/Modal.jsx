@@ -10,6 +10,7 @@ import {
     Button,
     useDisclosure,
     Text,
+    Center,
   } from '@chakra-ui/react'
 import { MdLocalFireDepartment } from 'react-icons/md'
 import {useNavigate} from 'react-router-dom'
@@ -27,8 +28,9 @@ export default function OurModal() {
     }
     return (
       <>
-        <Button onClick={lastFunc} fontSize='1.35rem' mt='25px' colorScheme='green' variant='solid' >Place Order</Button>
-  
+      <Center>
+        <Button className='orderButton' ml='40px' onClick={lastFunc} fontSize='1.35rem' mt='25px' colorScheme='green' variant='solid' >Place Order</Button>
+      </Center>
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>

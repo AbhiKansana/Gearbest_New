@@ -3,6 +3,7 @@ import PaymentMode from './PaymentMode'
 import {Box , Flex, HStack, Text, VStack } from '@chakra-ui/react'
 import {useSelector,useDispatch} from 'react-redux'
 import { mainCartProductsSuccess } from '../../Redux/CartPage/actions'
+import './payment.css'
 import OurModal from './Modal'
 
 function Done() {
@@ -27,10 +28,10 @@ function Done() {
 
   return (
     <>
-    <HStack spacing='300px'>
+    <Flex className='paymentMain' gap='30px' justifyContent='space-between' padding='40px'>
         <PaymentMode/>
-        <Box>
-            <Flex boxSizing='border-box' w='250px' justifyContent='space-between'>
+        <Box bg='#fff0f3' p='30px' className='forOrder' maxw='550px' margin='auto'>
+            <Flex  boxSizing='border-box' w='250px'  justifyContent='space-between'>
                 <Text fontSize='22px' fontWeight='600' >Total Price</Text>
                 <Text textDecor='line-through' fontSize='22px' fontWeight='600'>₹{totalPrice.toFixed(2)}</Text>
             </Flex>
@@ -45,8 +46,8 @@ function Done() {
            
         </Box>
         
-    </HStack>
-    <OurModal/>
+    </Flex>
+    <OurModal />
     </>
   )
 }

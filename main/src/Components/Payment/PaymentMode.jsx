@@ -5,12 +5,12 @@ import './PaymentMode.css'
 
 function PaymentMode() {
   return (
-    <Box>
+    <Box bg='#f4f4f9' p='20px' maxW='500px' m='auto'>
         <Text fontWeight='500' fontSize='18px'>Add Your Card</Text>
                     <p  className="tags">Card Number</p>
-                    <Input w='400px' className="topTwo padLeft focus" type="text" required></Input>
+                    <Input maxW='400px' className="topTwo padLeft focus" type="text" required></Input>
                     <p className="tags">Name on Card</p>
-                    <Input w='400px' className="topTwo padLeft focus" type="text" required></Input>
+                    <Input maxW='400px' className="topTwo padLeft focus" type="text" required></Input>
                     <p className="tags">Expiration Date</p>
                     <div className="three">
                     <select  required className="select1 hov1 focus">

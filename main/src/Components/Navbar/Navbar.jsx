@@ -40,7 +40,7 @@ function Navbar() {
           <Image
             cursor="pointer"
             w="80%"
-            minW='160px'
+            minW="160px"
             src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"
           ></Image>
         </Link>
@@ -64,40 +64,36 @@ function Navbar() {
           </Text>
         </Flex>
         <Flex p="10px" gap="40px" flexDir="row-reverse">
-          <Center cursor="pointer" gap="10px">
-            {" "}
-            <Link to="/cart">
-              {" "}
+          <Link to="/cart">
+            <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.5rem" as={AiOutlineShoppingCart} />
-            </Link>
-            <Link to="/cart">
               <Text fontSize="1.05rem">Cart</Text>
-            </Link>
-          </Center>
-          <Center cursor="pointer" gap="10px">
-            <Icon boxSize="1.5rem" as={AiOutlineHeart} />
-            <Link to="/wishlist">
+            </Center>
+          </Link>
+          <Link to="/wishlist">
+            <Center cursor="pointer" gap="10px">
+              <Icon boxSize="1.5rem" as={AiOutlineHeart} />
               <Text fontSize="1.15rem">Favourites</Text>
-            </Link>
-          </Center>
-          <Center cursor="pointer" gap="10px">
-            <Icon boxSize="1.5rem" as={CgProfile} />
-            <Link to="/signup">
+            </Center>
+          </Link>
+          <Link to="/signup">
+            <Center cursor="pointer" gap="10px">
+              <Icon boxSize="1.5rem" as={CgProfile} />
               <Text fontSize="1.05rem">Sign In</Text>
-            </Link>
-          </Center>
-          <Flex h='35px' border="2.2px solid #3a86ff" borderRadius="25px">
+            </Center>
+          </Link>
+          <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">
             <Input
-            h='100%'
+              h="100%"
               className="NavInput"
               maxW="300px"
               borderLeftRadius="25px"
               borderWidth="0px"
               fontSize="1.1rem"
               placeholder="mobile phone"
-              py='-4px'
+              py="-4px"
             ></Input>
-            <Button h='100%' borderRadius="25px">
+            <Button h="100%" borderRadius="25px">
               <Center>
                 <Icon boxSize="1.3rem" as={AiOutlineSearch}></Icon>
               </Center>
@@ -106,19 +102,27 @@ function Navbar() {
         </Flex>
       </Box>
       <Box className="NavMenu">
-      <Center >
-      <Menu>
-        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-          Menu
-        </MenuButton>
-        <MenuList>
-        <Link to='/signup'><MenuItem>Sign up</MenuItem></Link>
-        <Link to='/wishlist'><MenuItem>Wish List</MenuItem></Link>
-        <Link to='/cart'><MenuItem>Cart</MenuItem></Link>
-        <Link to='/products'><MenuItem>Mobiles</MenuItem></Link>
-        </MenuList>
-      </Menu>
-      </Center>
+        <Center>
+          <Menu>
+            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+              Menu
+            </MenuButton>
+            <MenuList>
+              <Link to="/signup">
+                <MenuItem>Sign up</MenuItem>
+              </Link>
+              <Link to="/wishlist">
+                <MenuItem>Wish List</MenuItem>
+              </Link>
+              <Link to="/cart">
+                <MenuItem>Cart</MenuItem>
+              </Link>
+              <Link to="/products">
+                <MenuItem>Mobiles</MenuItem>
+              </Link>
+            </MenuList>
+          </Menu>
+        </Center>
       </Box>
     </Box>
   );

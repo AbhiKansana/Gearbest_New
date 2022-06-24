@@ -2,6 +2,7 @@ import { HStack, Icon, Text } from '@chakra-ui/react'
 import React from 'react'
 import { SiAwesomelists } from 'react-icons/si'
 import './Row2.css'
+import { Link } from 'react-router-dom'
 
 function Row2() {
   return (
@@ -10,6 +11,7 @@ function Row2() {
         <Icon boxSize='20px' as={SiAwesomelists} />
         <Text fontSize='1.35rem' fontWeight='bold'> Awesome Tools</Text>
         </HStack>
+      <Link to='/products'>
          <div className='four-div'>
           <div className='four-div-block'>
               <p className='topClassP' style={{textAlign:"center",marginBottom:"30px",fontSize:"17px",fontWeight:"500"}}>3D Printers & Laser Engravers</p>
@@ -34,6 +36,7 @@ function Row2() {
               <p className="discription" >1080P resolution, 250  more outstanding details.</p>
           </div>
       </div>
+      </Link>
     </div>
   )
 }
