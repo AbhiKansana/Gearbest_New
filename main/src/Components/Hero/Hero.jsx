@@ -1,10 +1,11 @@
 import React from 'react'
 import { Text,Box,Flex, HStack, Image } from '@chakra-ui/react'
 import Carousel from './HeroImageSlider'
+import './hero.css'
 
 function Hero() {
   return (
-    <Box>
+    <Box className='heroNone'>
         <Flex>
             <Box bg='#ECF6FF' w='20%'>
                 <Text h='40px' boxSizing='border-box' bg='black' p='3px 0' color='white' textAlign='center' fontWeight='bold' fontSize='1.45rem'>Category</Text>

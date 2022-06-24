@@ -1,9 +1,15 @@
+import { HStack, Icon, Text } from '@chakra-ui/react'
 import React from 'react'
+import { SiAwesomelists } from 'react-icons/si'
 import './Row2.css'
 
 function Row2() {
   return (
     <div className='row2MainDiv'>
+      <HStack gap='28px' mb='20px' ml='15px'>
+        <Icon boxSize='20px' as={SiAwesomelists} />
+        <Text fontSize='1.35rem' fontWeight='bold'> Awesome Tools</Text>
+        </HStack>
          <div className='four-div'>
           <div className='four-div-block'>
               <p className='topClassP' style={{textAlign:"center",marginBottom:"30px",fontSize:"17px",fontWeight:"500"}}>3D Printers & Laser Engravers</p>

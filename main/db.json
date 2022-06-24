@@ -85,6 +85,18 @@
       "category": "accessories",
       "qnty": 0,
       "description": "ESTRELLA Class 10 SDHC 32GB SD Card High Speed SDHC 32 GB SD Card Class 10 95 MB/s Memory Card"
+    },
+    {
+      "rating": "★★★★",
+      "id": 4,
+      "image_url": "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Green-425885-0._w280_p1_.jpg",
+      "name": "Xiaomi Redmi 9A  4G LTE SmartPhone",
+      "price": 11463.44,
+      "strikedoffprice": 12562.75,
+      "brand": "Xiaomi",
+      "category": "cell",
+      "qnty": 0,
+      "description": "Redmi Note9A Pro CN Version 6.6 Inch 2400x1080 FHD+ Display 5G Smartphone MediaTek Dimensity 1100 6GB 128GB Triple Rear Camera 5000mAh Battery MIUI 12.5 - Black"
     }
   ],
   "products": [

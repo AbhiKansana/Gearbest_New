@@ -82,7 +82,7 @@ function Unit({obj}) {
                 py={1}
                 onClick={handleRemove}
                 bg="white"
-                fontSize="1rem"
+                fontSize=".9rem"
                 color="gray.900"
                 fontWeight="bold"
                 rounded="lg"

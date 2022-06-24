@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Box , Center, Grid , Button, Text} from '@chakra-ui/react'
+import { Box , Center, Grid , Button, Text, SimpleGrid} from '@chakra-ui/react'
 import productsPageFetch from '../../Redux/ProductsPage/actions'
 import { useSelector, useDispatch} from 'react-redux'
 import UnitProduct from './UnitProduct'
 import { pageNo } from '../../Redux/Filter/actions'
+import './productPage.css'
 
 function MainProducts() {
 
@@ -43,15 +44,15 @@ function MainProducts() {
 
   return (
     
-    <Box  w='70%' minHeight='1299px'>
-    <Grid  templateColumns='repeat(3, 1fr)' gap={6} p='1.25rem 1rem'  >
+    <Box  className='lastAir'  minHeight='1299px'>
+    <SimpleGrid  width='100%'  minChildWidth='250px' gap={6} p='1.25rem 1rem'  >
         {arr1}
-    </Grid>
+    </SimpleGrid>
     <Center>
     <Button
         size='md'
-        height='48px'
-        width='120px'
+        minH='48px'
+        maxW='120px'
         border='2px'
         borderColor='green.500'
         disabled={page===1}
@@ -62,13 +63,13 @@ function MainProducts() {
             }
         }}
         >
-                 Previous
+                 Prev
     </Button>
 
     <Center
         size='md'
-        height='48px'
-        width='80px'
+        h='48px'
+        w='80px'
         fontSize='1.5rem'
         >
            {page}
@@ -78,8 +79,8 @@ function MainProducts() {
 
     <Button
         size='md'
-        height='48px'
-        width='120px'
+        minH='48px'
+        maxW='120px'
         border='2px'
         disabled={page===3}
         borderColor='green.500'

@@ -40,8 +40,8 @@ function Desc() {
     const filledLike = "https://cdn-icons-png.flaticon.com/128/7299/7299756.png"
 
     function randomOff(){
-        let off = Math.floor(Math.random()*10)+10
-        let offNew = off + "%"
+        // let off = Math.floor(Math.random()*10)+10
+        let offNew = 15 + "%"
         return offNew
 }
 
@@ -109,7 +109,7 @@ function Desc() {
                     <div className='timer'>
                         <div className='timerLeft'>
                             <img src="https://cdn-icons-png.flaticon.com/128/3601/3601695.png" alt="" />
-                            <span>
+                            <span style={{marginRight:10}}>
                                 FLASH DEAL
                             </span>
 

@@ -40,6 +40,7 @@ function Navbar() {
           <Image
             cursor="pointer"
             w="80%"
+            minW='160px'
             src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"
           ></Image>
         </Link>

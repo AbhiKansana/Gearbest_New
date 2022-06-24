@@ -1,0 +1,31 @@
+
+
+@media (min-width: 0px){
+    .filters{
+        width: 100%;
+    }
+    .lastAir{
+        margin: auto;
+    }
+
+    .mainPP{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (min-width: 600px ){
+    .filters{
+        width: 30%;
+    }
+
+    .mainPP{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lastAir{
+        flex-grow: 1;
+    }
+}

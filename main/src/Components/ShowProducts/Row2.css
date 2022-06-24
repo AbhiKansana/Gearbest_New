@@ -1,18 +1,20 @@
 .four-div {
-    height: 300px;
+    /* height: 300px; */
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    background-color: #edf2f4;
+    padding: 15px;
+    gap: 20px;
   }
   
   .four-div-block {
-    width: 25%;
-  
-    height: 300px;
+
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
+    margin-bottom: 15px;
   }
   .four-div-block > div > img:hover {
     transform: scale(1.022);

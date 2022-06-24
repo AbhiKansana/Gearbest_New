@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Box, Button, Checkbox, CheckboxGroup, Select, Stack, Text, VStack } from '@chakra-ui/react'
 import { useDispatch} from 'react-redux'
 import {sort,order, brand} from '../../Redux/Filter/actions'
+import './productPage.css'
 
 function Fliters() {
 
@@ -35,7 +36,7 @@ function Fliters() {
     // console.log("sortByPrice",sortByPrice)
 
   return (
-    <Box p='1.25rem 1rem' w='30%'>
+    <Box className='filters' p='1.25rem 1rem' >
         <Box>
             <Select textAlign='center' cursor='pointer' onChange={(e)=>handleSortByPrice(e)} placeholder='Sort By Price'>
                 <option  value='l2h'>Low to high</option>
@@ -43,7 +44,7 @@ function Fliters() {
             </Select>
         </Box>
         <Box mt='30px'>
-            <Text as={Button} mb='20px' textAlign='left'  cursor='default' w='328px'  >      
+            <Text as={Button} mb='20px' textAlign='left'  cursor='default' w='100%'  >      
             Sort By Brand       
             </Text>
               <CheckboxGroup  onChange={handelBrandValues} colorScheme='green' defaultValue={brandValues}>

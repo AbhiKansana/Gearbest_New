@@ -1,10 +1,17 @@
 import React from 'react'
 import  './Row1.css'
 import { Link } from 'react-router-dom'
+import { HStack, Icon, Text } from '@chakra-ui/react'
+import { HiOutlineTrendingUp } from 'react-icons/hi'
+
 
 function Row1() {
   return (
     <div>
+        <HStack ml='15px' gap='28px' mb='20px'>
+        <Icon boxSize='20px' as={HiOutlineTrendingUp} />
+        <Text fontSize='1.35rem' fontWeight='bold'> Trending</Text>
+        </HStack>
          <div className='third-div-title-image'>
        <div className='third-div-title-images'>
                <Link to='/products'><div className='third-div-title-images1'>
@@ -17,7 +24,7 @@ function Row1() {
                     <div className='offer-price'>
                         <del>₹16903.16</del>
                     </div>
-                    <div className='discount'>12% OFF</div>
+                    <div style={{textAlign:'center'}} className='discount'>12% OFF</div>
                 </div>
             </div>
             <div className='third-div-title-images'>
@@ -34,6 +41,7 @@ function Row1() {
                     <div className='discount'>10% OFF</div>
                 </div>
             </div>
+            {/*  */}
             <div className='third-div-title-images'>
                 <div className='third-div-title-images1'>
                     <img src="https://img.gkbcdn.com/p/2022-02-10/a6r-tws-wireless-earphones-black-4570b2-1644488631155._w280_p1_.jpg" alt="" />

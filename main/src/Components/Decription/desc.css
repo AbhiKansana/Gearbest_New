@@ -6,7 +6,7 @@ button,.pointer{
 }
 
 .biggy{
-    padding: 20px 160px;
+    padding: 20px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -37,7 +37,8 @@ button,.pointer{
 
 .mainImgBox img{
     width: 100%;
-    /* height: auto; */
+    max-width: 360px;
+    margin: auto;
 }
 
 .forSpans span{
@@ -251,23 +252,40 @@ button,.pointer{
 
  .footer > div img{
     width: 34px;
-    margin-right: 12px;
-}
+    margin: auto;
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px  180px;
-}
+ }
+
 
 .footer p{
     font-size: 14.5px;
     margin: 0;
+    text-align: center;
 }
 
-.footer .four{
+.footer {
+    margin-top: 60px;
     display: flex;
-    align-items: center;
+   justify-content: space-between;
+   gap: 12px;
+   padding: 0;
 
     
+}
+
+
+@media (max-width:850px){
+    .subMain{
+        flex-direction: column;
+    }
+
+    .mainImgBox{
+        width: 100%;
+
+    }
+
+    .rightMain{
+        width: 100%;
+        padding: 20px;
+    }
 }
