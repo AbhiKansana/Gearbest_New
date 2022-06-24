@@ -1,0 +1,21 @@
+
+@media (max-width: 1140px){
+    .footerTop{
+        display: flex;
+        gap:30px;
+        flex-direction: column;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 900px){
+
+    .footerMid{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

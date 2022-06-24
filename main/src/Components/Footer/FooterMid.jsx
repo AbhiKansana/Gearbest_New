@@ -5,11 +5,11 @@ import {BsFacebook, BsInstagram, BsMessenger , BsYoutube, BsTwitter} from 'react
 function FooterMid() {
   return (
     <Box bg='#FAFAFA' p='50px 20px'>
-        <Flex justifyContent='space-between'>
+        <Flex className='footerMid' justifyContent='space-between'>
             <Center>
                 <Text mr='8px'>NewsLetter</Text>         
                 <Input placeholder='Enter email' w='280px'></Input>
-                <Button _hover={{background:'#2b2d42'}} bg='blackAlpha.900' color='white'>Subscribe</Button>
+                <Button _hover={{background:'#2b2d42'}} bg='blackAlpha.900' minW='90px' color='white'>Subscribe</Button>
             </Center>
             <Center>
                 <HStack gap='30px'>

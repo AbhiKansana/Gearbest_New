@@ -16,7 +16,8 @@ import {
 
 function App() {
   return (
-    <Box  margin='auto' maxW='1200px'  className="App">
+    <Box  margin='auto' maxW='1200px' 
+     className="App">
       <Navbar/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
@@ -24,7 +25,6 @@ function App() {
         <Route path='/products:id' element={<Description/>}/>
         <Route path='/cart' element={<CartPage/>}/>   
         <Route path='/payment' element={<Payment/>}/>   
-        <Route path='/signup' element={<Login/>}/>   
         <Route path='/signup' element={<Login/>}/>   
         <Route path='/wishlist' element={<WishList/>}/>   
       </Routes>
