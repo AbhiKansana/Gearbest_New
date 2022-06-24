@@ -19,7 +19,7 @@ export default function Carousel() {
     ));
 
   return (
-    <div  style={{width:'912px'}} className="Appy">
+    <div  style={{maxWidth:'912px'}} className="Appy">
       <Slider dots={true}>{renderSlides()}</Slider>
     </div>
   );
