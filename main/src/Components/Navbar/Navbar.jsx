@@ -85,16 +85,18 @@ function Navbar() {
               <Text fontSize="1.05rem">Sign In</Text>
             </Link>
           </Center>
-          <Flex border="2.2px solid #3a86ff" borderRadius="25px">
+          <Flex h='35px' border="2.2px solid #3a86ff" borderRadius="25px">
             <Input
+            h='100%'
               className="NavInput"
               maxW="300px"
               borderLeftRadius="25px"
               borderWidth="0px"
               fontSize="1.1rem"
               placeholder="mobile phone"
+              py='-4px'
             ></Input>
-            <Button borderRadius="25px">
+            <Button h='100%' borderRadius="25px">
               <Center>
                 <Icon boxSize="1.3rem" as={AiOutlineSearch}></Icon>
               </Center>

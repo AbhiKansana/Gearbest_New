@@ -36,7 +36,7 @@ function Unit({obj}) {
           rounded="lg"
           overflow="hidden"
         >
-          <Box w={1 / 3}>
+          <Box w={1 / 3} minW='120px'>
             <Image src={obj.image_url} />
           </Box>
 
@@ -82,7 +82,7 @@ function Unit({obj}) {
                 py={1}
                 onClick={handleRemove}
                 bg="white"
-                fontSize="s"
+                fontSize="1rem"
                 color="gray.900"
                 fontWeight="bold"
                 rounded="lg"

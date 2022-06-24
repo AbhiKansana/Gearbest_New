@@ -1,4 +1,5 @@
 import React from "react";
+import './cart.css'
 import {
   Box,
   Text,
@@ -46,10 +47,6 @@ function Main() {
       </Text>
       {load &&  arr.length<1 && (  <Spinner pos='relative' top='50%' left='50%' size="xl" zIndex='100' />)}
       { arr.length> 0 && <Flex gap='180px'>
-        <Text ml='50px'>Item</Text>
-        <Text ml='420px'>Price</Text>
-        <Text>Quantity</Text>
-        <Text>Total</Text>
       </Flex>}
       <Box mb='30px' borderBottom='.4px solid black'>
       {arr}
@@ -90,26 +87,30 @@ function Unit({ data }) {
   }
 
   return (
-    <Flex 
+    <Flex className="cartUnit"
       boxSizing="border-box"
       p="20px"
       pl="0"
       justifyContent="space-between"
+      gap='20px'
       alignItems="center"
       borderTop=".4px solid black"
     >
       <Image height="140px" src={data.image_url}></Image>
-      <VStack spacing={8}>
+      <VStack  gap={8}>
         <Text>{data.name}</Text>
         <Button
           onClick={() => handleDelete(data.id)}
           colorScheme="red"
           variant="outline"
         >
-          Delete
+          Remove
         </Button>
       </VStack>
-      <Text>{data.price}</Text>
+      <Flex flexDirection='column'  >
+      <Text textAlign='center' >Price</Text>
+      <Text>₹{data.price}</Text>
+      </Flex>
       <Box
         display="flex"
         justifyContent="space-between"
@@ -142,7 +143,10 @@ function Unit({ data }) {
         </Button>
       </Box>
       <Center boxSizing="border-box" w='80px'>
-      <Text  fontWeight="600"> {((data.price)*(data.qnty+1)).toFixed(2)}</Text> 
+      <Flex flexDir='column'>
+       <Text textAlign='center' fontWeight='500'>Total</Text> 
+      <Text  fontWeight="600"> ₹{((data.price)*(data.qnty+1)).toFixed(2)}</Text> 
+      </Flex>
       </Center>
     </Flex>
   );
