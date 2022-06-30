@@ -33,7 +33,7 @@ export default function productsPageFetch(param){
     return (dispatch) =>{
         dispatch(productsPageRequest())
         // axios.get(`http://localhost:8000/products?_page=${page}&_limit=9&_sort=${sort}&_order=${order}`)
-        axios.get(`http://localhost:7000/products`,{
+        axios.get(`https://json-server-learner.herokuapp.com/products`,{
             params : {
                     _limit:9,
                     _sort : param.sort,

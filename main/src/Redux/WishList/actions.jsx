@@ -35,7 +35,7 @@ function wishListProductsFailure(){
 export function mainWishListProductsSuccess(){
     return (dispatch)=>{
         dispatch(wishListProductsRequest())
-        axios.get('http://localhost:7000/wishList')
+        axios.get('https://json-server-learner.herokuapp.com/wishList')
         .then(res=>{
             dispatch(wishListProductsSucess(res.data))
         })
@@ -48,7 +48,7 @@ export function mainWishListProductsSuccess(){
 
 export function deleteWishListItem(lid){
     return (dispatch)=>{
-    axios.delete(`http://localhost:7000/wishList/${lid}`)
+    axios.delete(`https://json-server-learner.herokuapp.com/wishList/${lid}`)
     .then(res=>{
         dispatch(mainWishListProductsSuccess())
         

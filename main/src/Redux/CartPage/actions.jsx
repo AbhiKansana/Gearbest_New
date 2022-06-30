@@ -35,7 +35,7 @@ function cartProductsFailure(){
 export function mainCartProductsSuccess(){
     return (dispatch)=>{
         dispatch(cartProductsRequest())
-        axios.get('http://localhost:7000/cart')
+        axios.get('https://json-server-learner.herokuapp.com/cart')
         .then(res=>{
             dispatch(cartProductsSucess(res.data))
         })
@@ -48,7 +48,7 @@ export function mainCartProductsSuccess(){
 
 export function deleteCartItem(lid){
     return (dispatch)=>{
-    axios.delete(`http://localhost:7000/cart/${lid}`)
+    axios.delete(`https://json-server-learner.herokuapp.com/cart/${lid}`)
     .then(res=>{
         dispatch(mainCartProductsSuccess())
         
@@ -63,7 +63,7 @@ export function deleteCartItem(lid){
 
 export function updateCartItem(lid,q,num){
     return(dispatch)=>{
-        axios.patch(`http://localhost:7000/cart/${lid}`,{
+        axios.patch(`https://json-server-learner.herokuapp.com/cart/${lid}`,{
             "qnty" : q+num
         })
         .then(res=>{

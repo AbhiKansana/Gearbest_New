@@ -16,7 +16,7 @@ function Desc() {
     // console.log(data1)
   
     useEffect(()=>{
-        axios.get(`http://localhost:7000/products/${id}`)
+        axios.get(`https://json-server-learner.herokuapp.com/products/${id}`)
         .then(res => {
             setdata(res.data)
         })
@@ -68,7 +68,7 @@ function Desc() {
     const[liked,setliked] = useState(false)
 
     function handleCart(){
-        axios.post("http://localhost:7000/cart",data)
+        axios.post("https://json-server-learner.herokuapp.com/cart",data)
         .then(res=>{
             // console.log(res)
         })
@@ -80,7 +80,7 @@ function Desc() {
 
     function handleLike(){
         setliked(prev=>!prev)
-        axios.post("http://localhost:7000/wishList",data)
+        axios.post("https://json-server-learner.herokuapp.com/wishList",data)
         .then(res=>{
             // console.log(res)
         })
