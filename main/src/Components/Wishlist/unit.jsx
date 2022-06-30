@@ -5,7 +5,7 @@ import { deleteWishListItem } from "../../Redux/WishList/actions";
 import { useDispatch } from 'react-redux'
 
 function Unit({obj}) {
-    
+    // console.log("obj",obj.rating)
      const dispatch = useDispatch()
 
       const starArr = obj.rating.split("")
