@@ -18,10 +18,17 @@
     .NavMenu{
         display: flex;
     }
+
+    .navbarBox{
+        width: 100%;
+    }
 }
 
 @media (max-width : 1150px){
     .NavInput{
         display:none;
+    }
+    .navbarBox{
+        width: 100%;
     }
 }

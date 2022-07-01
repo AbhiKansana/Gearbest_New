@@ -27,13 +27,26 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 
 function Navbar() {
   return (
+    <>
+ 
     <Box
+    
       p="10px"
-      maxw="1000px"
+      pb='0px'
+      width='100%'
+      maxw="1200px"
       className="navbarBox"
       display="flex"
       gap="40px"
       justifyContent="space-between"
+      // position={'fixed'}
+      // top='0px'
+      // margin='auto'
+      // zIndex='200'
+      background={'#f8f9fa'}
+      
+      
+  
     >
       <Center maxWidth="300px" minW="150px" h="108px">
         <Link to="/">
@@ -46,7 +59,7 @@ function Navbar() {
         </Link>
       </Center>
       <Box className="navSecondBox" flexGrow="60%">
-        <Flex p="10px" gap="20px" flexDir="row-reverse" backgroundColor="white">
+        <Flex p="10px" gap="20px" flexDir="row-reverse" >
           <Text fontSize="14px" fontWeight="300" cursor="pointer">
             Country Website
           </Text>
@@ -125,6 +138,9 @@ function Navbar() {
         </Center>
       </Box>
     </Box>
+
+ 
+    </>
   );
 }
 
