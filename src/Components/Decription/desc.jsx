@@ -5,6 +5,8 @@ import {useParams, useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux';
 import { cartProductsSuccess } from '../../Redux/CartPage/actions'
+import {Center, Spinner} from '@chakra-ui/react'
+
 
 
 function Desc() {
@@ -89,75 +91,85 @@ function Desc() {
         })
     }
 
-  
+  const lenObj = Object.keys(data).length
   return (
     <div className='biggy'>
-      
         <div className='main'>
             <img className='headerImg' src="https://img.gkbcdn.com/s3/bn/2205/1500x125-6271031b2b40c930d0488be9.jpg" alt="" />
-            <div className="subMain">
-                <div className="mainImgBox">
-                <img  src={data.image_url} alt="watch" />
-                </div>
-                <div  className="rightMain">
-                <p className='title'>{data.description}</p>
-                    <div className='forSpans'>
-                    <span>Brand: <span>{data.brand}</span> </span>
-                        <span>Item Code: <span>345617</span>
-                        </span>
+                {lenObj===0 ?
+
+                    <Center>
+
+                        <Spinner size='xl' color='red.500' />
+
+                    </Center>
+                    :
+                    <div className="subMain">
+                    <div className="mainImgBox">
+                    <img  src={data.image_url} alt="watch" />
                     </div>
-                    <div className='timer'>
-                        <div className='timerLeft'>
-                            <img src="https://cdn-icons-png.flaticon.com/128/3601/3601695.png" alt="" />
-                            <span style={{marginRight:10}}>
-                                FLASH DEAL
+                    <div  className="rightMain">
+                    <p className='title'>{data.description}</p>
+                        <div className='forSpans'>
+                        <span>Brand: <span>{data.brand}</span> </span>
+                            <span>Item Code: <span>345617</span>
                             </span>
-
                         </div>
-                        <div className="timerRight">
-                         <span style={{marginRight:20}}>Sales Ends in 2 hours </span>
-                         <div className='clock11'>
-                           <Clock />
-
-                         </div>
-                        </div>
-
-                    </div>
-                    <div className="data">
-                        <div className="price">
-                        <span className='label'>Price:</span><span className='price1'>&#8377;{data.offerPrice}</span><span className='price2'><s>&#8377;{data.strikedoffprice}</s></span><span className="price3">{randomOff()}OFF</span>
-                        </div>
-                        <div className="shipFrom">
-                            <span className="label">Ship From: </span><span className='shipName'>China</span>
-                        </div>
-                        <div className="qty">
-                            <span className="label">QTY:</span>
-                            <button className='counter' onClick={remove}>-</button>
-                            <span className='counterBox'>{counter}</span>
-                            <button className='counter' onClick={add}>+</button>
-                        </div>
-                    </div>
-                    <div className="buttons">
-                            <div onClick={()=>Navigate('/cart')} className="buyNow pointer">Buy Now </div>
-                            <div onClick={handleCart} className="addToCart pointer" >Add to Cart </div>
-                            <div onClick={handleLike} className="wishList pointer">
-                                <img src={liked ? filledLike : unfilledLike} />
-                                <p className="wishTxt">
-                                    Add to WishList
-                                </p>
+                        <div className='timer'>
+                            <div className='timerLeft'>
+                                <img src="https://cdn-icons-png.flaticon.com/128/3601/3601695.png" alt="" />
+                                <span style={{marginRight:10}}>
+                                    FLASH DEAL
+                                </span>
+    
                             </div>
-                            
+                            <div className="timerRight">
+                             <span style={{marginRight:20}}>Sales Ends in 2 hours </span>
+                             <div className='clock11'>
+                               <Clock />
+    
+                             </div>
+                            </div>
+    
+                        </div>
+                        <div className="data">
+                            <div className="price">
+                            <span className='label'>Price:</span><span className='price1'>&#8377;{data.offerPrice}</span><span className='price2'><s>&#8377;{data.strikedoffprice}</s></span><span className="price3">{randomOff()}OFF</span>
+                            </div>
+                            <div className="shipFrom">
+                                <span className="label">Ship From: </span><span className='shipName'>China</span>
+                            </div>
+                            <div className="qty">
+                                <span className="label">QTY:</span>
+                                <button className='counter' onClick={remove}>-</button>
+                                <span className='counterBox'>{counter}</span>
+                                <button className='counter' onClick={add}>+</button>
+                            </div>
+                        </div>
+                        <div className="buttons">
+                                <div onClick={()=>Navigate('/cart')} className="buyNow pointer">Buy Now </div>
+                                <div onClick={handleCart} className="addToCart pointer" >Add to Cart </div>
+                                <div onClick={handleLike} className="wishList pointer">
+                                    <img src={liked ? filledLike : unfilledLike} />
+                                    <p className="wishTxt">
+                                        Add to WishList
+                                    </p>
+                                </div>
+                                
+                        </div>
+                        <div className="paypal">
+                            <span className="label">
+                                Payment:
+                            </span>
+                            <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
+                        </div>
+                       
+    
                     </div>
-                    <div className="paypal">
-                        <span className="label">
-                            Payment:
-                        </span>
-                        <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
-                    </div>
-                   
-
                 </div>
-            </div>
+                
+                }
+           
             <div className="footer">
        <div className="four">
            <img src="https://cdn-icons-png.flaticon.com/128/2438/2438078.png" alt=""/>
