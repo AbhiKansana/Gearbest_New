@@ -3,8 +3,19 @@ Gearbest was founded in 2013 with the mission of creating a platform that truly 
 
 Project build date : Construct week (03rd JUne - 13th June)
 
-![Screenshot (49)](https://user-images.githubusercontent.com/100181581/177503408-fbb35083-7511-402a-9c82-e87f9c1d7da9.png)
-![Screenshot (50)](https://user-images.githubusercontent.com/100181581/177503636-92a52f5e-deef-4d1c-a8a3-c8c6524cddb7.png)
-![Screenshot (51)](https://user-images.githubusercontent.com/100181581/177503651-1d7b1f70-51b1-4d55-808a-45d6d473e6bb.png)
-![Screenshot (52)](https://user-images.githubusercontent.com/100181581/177503659-87af72fd-fd57-4b28-b104-4d163224b246.png)
-![Screenshot (53)](https://user-images.githubusercontent.com/100181581/177503661-462884f8-3b73-4ede-8fbc-128e9b2723cf.png)
+<Img src="https://user-images.githubusercontent.com/100181581/177503408-fbb35083-7511-402a-9c82-e87f9c1d7da9.png" />
+
+<br/>
+<Img src="https://user-images.githubusercontent.com/100181581/177503659-87af72fd-fd57-4b28-b104-4d163224b246.png" />
+
+<br/>
+<Img src="https://user-images.githubusercontent.com/100181581/177503636-92a52f5e-deef-4d1c-a8a3-c8c6524cddb7.png" />
+
+<br/>
+<Img src="https://user-images.githubusercontent.com/100181581/177503651-1d7b1f70-51b1-4d55-808a-45d6d473e6bb.png" />
+
+<br/>
+<Img src="https://user-images.githubusercontent.com/100181581/177503659-87af72fd-fd57-4b28-b104-4d163224b246.png"/>
+
+
+<br/>
