@@ -290,4 +290,23 @@ button,.pointer{
         width: 100%;
         padding: 20px;
     }
+
+    .addToCart, .buyNow{
+       width:300px ;
+       text-align: center;
+       margin: 10px 30px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salesEnd{
+        background: red;
+        display: none;
+        font-size: 1rem;
+    }
+    
+  
 }

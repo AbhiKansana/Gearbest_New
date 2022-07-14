@@ -24,6 +24,7 @@ function Row2() {
               <p className="discription" >Exploring a comprehensive gaming experience as always through Gamesir</p>
             
           </div>
+          
           <div className='four-div-block'>
               <p style={{textAlign:"center",fontSize:"17px",marginBottom:"30px",fontWeight:"500"}}>E-Bikes</p>
               <div><img src="https://img.gkbcdn.com/s3/bn/2203/481198-623d205c2b40c91d90971af4.jpg" alt="" /></div>

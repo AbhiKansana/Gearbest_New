@@ -12,8 +12,8 @@ function HomePage() {
     <div>
      <Hero/>
      <Collection/>
-     <Collection2/>
      <Row1/>
+     <Collection2/>
      <Row2/>
      <GoToTop/>
     </div>

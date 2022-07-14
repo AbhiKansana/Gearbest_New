@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function Collection() {
   return (
-    <Box m='5 0px 0'>
+    <Box m='5 0px 0' my='40px'>
         <HStack ml='15px' gap='28px'>
         <Icon boxSize='20px' as={BsBagPlus} />
         <Text fontSize='1.35rem' fontWeight='bold'> COLLECTION</Text>

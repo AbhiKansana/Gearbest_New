@@ -124,7 +124,7 @@ function Desc() {
     
                             </div>
                             <div className="timerRight">
-                             <span style={{marginRight:20}}>Sales Ends in 2 hours </span>
+                             {/* <div classname='salesEnd'  style={{marginRight:20}}>Sales Ends in 2 hours </div> */}
                              <div className='clock11'>
                                <Clock />
     
