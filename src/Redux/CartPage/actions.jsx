@@ -13,7 +13,7 @@ export const actionTypes = {
 
 function cartProductsRequest(){
     return{
-        type : actionTypes.CART_PRODUCTS_REQUEST
+        type : actionTypes.CART_PRODUCTS_REQUEST       
     }
 }
 
@@ -41,7 +41,7 @@ export function mainCartProductsSuccess(){
         })
         .catch(err=>{
             console.log("errCartReducer",err)
-            dispatch(cartProductsFailure)
+            dispatch(cartProductsFailure())
         })
     }
 }
