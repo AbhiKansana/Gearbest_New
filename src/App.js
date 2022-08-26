@@ -6,8 +6,9 @@ import Footer from './Components/Footer/Footer';
 import Description from './Pages/Description';
 import CartPage from './Pages/CartPage';
 import Payment from './Pages/Payment';
-import Login from './Pages/Signup';
+import Login from './Pages/Login';
 import WishList from './Pages/WishList';
+import Register from './Pages/Register';
 import {
   Routes,
   Route,
@@ -30,8 +31,9 @@ function App() {
         <Route path='/products:id' element={<Description/>}/>
         <Route path='/cart' element={<CartPage/>}/>   
         <Route path='/payment' element={<Payment/>}/>   
-        <Route path='/signup' element={<Login/>}/>   
+        <Route path='/login' element={<Login/>}/>   
         <Route path='/wishlist' element={<WishList/>}/>   
+        <Route path='/register' element={<Register/>}/>   
       </Routes>
       <Footer/>
     </Box>

@@ -89,10 +89,10 @@ function Navbar() {
               <Text fontSize="1.15rem">Favourites</Text>
             </Center>
           </Link>
-          <Link to="/signup">
+          <Link to="/login">
             <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.5rem" as={CgProfile} />
-              <Text fontSize="1.05rem">Sign In</Text>
+              <Text fontSize="1.05rem">Log In</Text>
             </Center>
           </Link>
           <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">

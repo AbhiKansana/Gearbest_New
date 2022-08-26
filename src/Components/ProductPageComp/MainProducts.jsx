@@ -38,10 +38,6 @@ function MainProducts() {
         )
     })
 
-    if(page===1){
-        
-    }
-    
 
   return (
      <>
@@ -56,7 +52,7 @@ function MainProducts() {
                 color='blue.500'
                 size='xl'
 />
-<Text ml={'30px'}>Heroku is little Slow for first Time</Text>
+<Text ml={'30px'}>Heroku is little Slow</Text>
         </Center>
      </Box>}
       <SimpleGrid  width='100%'  minChildWidth='250px' gap={6} p='1.25rem 1rem'  >

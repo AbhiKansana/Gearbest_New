@@ -8,7 +8,7 @@ function Hero() {
     <>
     <Box  className='heroNone'>
         <Flex>
-            <Box height='500px' overflow='scroll' bg='#ECF6FF' w='20%' minW='130px'>
+            <Box height='560px' overflow='auto' bg='#ECF6FF' w='20%' minW='130px'>
                 <Text h='40px' boxSizing='border-box' bg='black' p='3px 0' color='white' textAlign='center' fontWeight='bold' fontSize='1.45rem'>Category</Text>
                 <Texty text="Consumer Electronics"/>
                 <Texty text="Industrial & Scientific"/>
@@ -19,6 +19,11 @@ function Hero() {
                 <Texty text="Health & Personal Care"/>
                 <Texty text="Home Improvement & Tools"/>
                 <Texty text="Drones, Toys & Hobbies"/>
+                <Texty text="Home & Garden"/>
+                <Texty text="Motor's & Car Electronics"/>
+                <Texty text="Men's Fashion"/>
+                <Texty text="Watches & Jewellery"/>
+                <Texty text="GearBest Promotion"/>
                 <Texty text="Home & Garden"/>
                 <Texty text="Motor's & Car Electronics"/>
                 <Texty text="Men's Fashion"/>
@@ -58,6 +63,6 @@ export default Hero
 
 function Texty({text}){
     return(
-        <Text   fontSize='.96rem'  ml='20px' padding='4.5px 0 '  _hover={{fontWeight:'600',cursor:'pointer'}}>    {text}</Text>
+        <Text   fontSize='.96rem'  ml='20px' padding='4.5px 0 '  _hover={{fontWeight:'500',cursor:'pointer'}}>    {text}</Text>
     )
 }

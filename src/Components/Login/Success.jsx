@@ -8,7 +8,7 @@ import {
 
   import { IoMdCheckmarkCircle } from "react-icons/io";
 
-function Messgae() {
+function Success() {
   return (
     <div>
         <Flex
@@ -65,7 +65,7 @@ function Messgae() {
   )
 }
 
-export default Messgae
+export default Success
 
 
 

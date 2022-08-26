@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
-import MainSign from '../Components/Signup/main'
+import MainSign from '../Components/Login/main'
 import GoToTop from '../Components/GoToTop'
 
-function Signup() {
+function Login() {
   return (
     <Box>
         <MainSign/>
@@ -12,4 +12,4 @@ function Signup() {
   )
 }
 
-export default Signup
+export default Login

@@ -13,8 +13,9 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import Messgae from './Messgae';
+import Success from './Success';
 import Error from './Error';
+import {Link as Link1} from 'react-router-dom'
 
 
 
@@ -45,8 +46,8 @@ export default function Login() {
       bg={useColorModeValue('gray.50', 'gray.800')}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading fontSize={'4xl'} fontWeight='400'>Sign Up</Heading>
-         {correct && <Messgae/>}
+          <Heading fontSize={'4xl'} fontWeight='400'>Log in</Heading>
+         {correct && <Success/>}
          {error && <Error/>}
         </Stack>
         <Box
@@ -84,6 +85,11 @@ export default function Login() {
                 Sign in
               </Button>
             </Stack>
+            <Stack pt={6}>
+                <Text align={'center'}>
+                  Don't have a account? <Link1 to='/register'><span style={{color:"blue"}}>Singup</span></Link1> 
+                </Text>
+              </Stack>
           </Stack>
           </form>
         </Box>
