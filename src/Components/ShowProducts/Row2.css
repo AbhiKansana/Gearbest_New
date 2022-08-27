@@ -1,20 +1,21 @@
 .four-div {
-    /* height: 300px; */
-    width: 90%;
-    margin: auto;
+    width: 100%;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    background-color: #edf2f4;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
     padding: 20px;
-    gap: 20px;
   }
   
   .four-div-block {
 
     background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 1rem;
     margin-top: 10px;
     margin-bottom: 15px;
+    max-width: 380px;
+    margin: auto;
   }
   .four-div-block > div > img:hover {
     transform: scale(1.022);
@@ -64,4 +65,19 @@
 
   .topClassP{
     font-size: 2.34rem;
+  }
+
+  @media (max-width:1200px){
+    .four-div {
+      grid-template-columns: repeat(2,1fr);
+      padding: 40px;
+    }
+  }
+
+
+  @media (max-width:600px){
+    .four-div {
+      grid-template-columns: repeat(1,1fr);
+      padding: 40px;
+    }
   }

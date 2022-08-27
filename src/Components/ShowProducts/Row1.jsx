@@ -92,7 +92,7 @@ function Row1() {
             </div>
           </div>
         </Link>
-        <Link to="/products">
+        {/* <Link to="/products">
           <div className="third-div-title-images">
             <div className="third-div-title-images1">
               <img
@@ -110,7 +110,7 @@ function Row1() {
               <div className="discount">40% OFF</div>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

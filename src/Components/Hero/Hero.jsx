@@ -7,8 +7,8 @@ function Hero() {
   return (
     <>
     <Box  className='heroNone'>
-        <Flex>
-            <Box height='560px' overflow='auto' bg='#ECF6FF' w='20%' minW='130px'>
+        <Flex justifyContent={'center'}>
+            <Box display={['none','none','block']} height='560px' overflow='auto' bg='#ECF6FF' w='20%' minW='130px'>
                 <Text h='40px' boxSizing='border-box' bg='black' p='3px 0' color='white' textAlign='center' fontWeight='bold' fontSize='1.45rem'>Category</Text>
                 <Texty text="Consumer Electronics"/>
                 <Texty text="Industrial & Scientific"/>

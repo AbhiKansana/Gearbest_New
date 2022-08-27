@@ -19,7 +19,7 @@ import axios from 'axios';
 function App() {
     
    axios.get('https://json-server-learner.herokuapp.com')
-   .then(res=>{console.log(res)})
+  //  .then(res=>{console.log(res)})
 
   return (
     <Box  margin='auto' maxW='1200px' 

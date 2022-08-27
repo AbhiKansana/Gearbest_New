@@ -14,7 +14,7 @@ function Row2() {
       <Link to='/products'>
          <div className='four-div'>
           <div className='four-div-block'>
-              <p className='topClassP' style={{textAlign:"center",marginBottom:"30px",fontSize:"17px",fontWeight:"500"}}>3D Printers & Laser Engravers</p>
+              <p className='topClassP' style={{textAlign:"center",marginBottom:"30px",fontSize:"17px",fontWeight:"500"}}>3D Printers </p>
               <div><img src="https://img.gkbcdn.com/s3/bn/2204/laser-6260f66a2b40c93724be1ee9.jpg" alt="" /></div>
               <p className="discription" >Your at-home 3D laser printer that makes magical things at the push of a button.</p>
           </div>
@@ -34,7 +34,7 @@ function Row2() {
           <div className='four-div-block'>
               <p style={{textAlign:"center",fontSize:"17px",marginBottom:"30px",fontWeight:"500"}}>Xming 1080p Projector</p>
               <div><img src="https://img.gkbcdn.com/s3/bn/2204/497217-624fa3172b40c931484ec7f2.jpg" alt="" /></div>
-              <p className="discription" >1080P resolution, 250  more outstanding details.</p>
+              <p className="discription" >1080P resolution, 250  more outstanding details which make work amzing.</p>
           </div>
       </div>
       </Link>
